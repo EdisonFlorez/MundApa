@@ -71,16 +71,26 @@ header::before {
     padding: 40px;
     color: gray;
 }
-.footer {
-    z-index: 3;
+footer {
+    z-index: 2;
     position: absolute;
-    bottom: 0;
-    background: blue;
+    bottom: -100vh;
+    
+
+    background: coral;
     line-height: 30px;
     font-weight: lighter;
     padding: 20px;
     color: white;
 }
+
+
+.Copyright {
+    color:rgb(22, 22, 22);
+    text-align: center;
+    
+    }
+
 nav{
     position: absolute;
     z-index: 1;
