@@ -83,7 +83,7 @@ header::before {
     background: rgb(12, 12, 12);
     
 }
-.imagebox1{
+.contenedor-img {
     height: 360px;
     width: 460px;
     background: crimson;
@@ -92,6 +92,11 @@ header::before {
     height: 300px;
     width: 400px;
     padding: 30px;
+}
+.gallery h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: 10px;
 }
 footer {
     z-index: 2;
@@ -143,4 +148,3 @@ a:hover{
     color:whitesmoke;
     opacity: 1;
 }
-/*este*/
