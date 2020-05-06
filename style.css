@@ -88,7 +88,7 @@ header::before {
     width: 460px;
     background: crimson;
 }
-.imagebox1 img{
+.gallery img{
     height: 300px;
     width: 400px;
     padding: 30px;
@@ -144,6 +144,3 @@ a:hover{
     opacity: 1;
 }
 /*este*/
-#footer p{
-    color:rgb(136, 87, 87);
-}
