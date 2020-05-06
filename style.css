@@ -76,18 +76,29 @@ header::before {
 }
     
 
-#gallery {
-    border:5px white;
-    height: 200px;
-    width: 500px;
+.gallery {
     
+    height: 100%;
+    width: 100%;
+    background: rgb(12, 12, 12);
+    
+}
+.imagebox1{
+    height: 360px;
+    width: 460px;
+    background: crimson;
+}
+.imagebox1 img{
+    height: 300px;
+    width: 400px;
+    padding: 30px;
 }
 footer {
     z-index: 2;
-    position: absolute;
-    bottom: -100vh;
     
-
+    position: relative;
+    height: 200px;
+    bottom:0;
     background: coral;
     line-height: 30px;
     font-weight: lighter;
@@ -97,6 +108,11 @@ footer {
 
 
 .copyright {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    background: rgb(240, 73, 73);
     color:rgb(22, 22, 22);
     text-align: center;
     
@@ -112,7 +128,7 @@ nav ul li{
     margin: 12px;
     padding: 0;
     color: white;
-    float: left;
+    
     list-style: none;
 
 
@@ -128,3 +144,6 @@ a:hover{
     opacity: 1;
 }
 /*este*/
+#footer p{
+    color:rgb(136, 87, 87);
+}
