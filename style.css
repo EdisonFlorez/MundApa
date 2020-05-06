@@ -66,10 +66,21 @@ header::before {
     position: absolute;
     top: 100vh;
     background: black;
+    
+}
+.container p{
     line-height: 30px;
     font-weight: lighter;
     padding: 40px;
     color: gray;
+}
+    
+
+#gallery {
+    border:5px white;
+    height: 200px;
+    width: 500px;
+    
 }
 footer {
     z-index: 2;
@@ -85,7 +96,7 @@ footer {
 }
 
 
-.Copyright {
+.copyright {
     color:rgb(22, 22, 22);
     text-align: center;
     
