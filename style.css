@@ -83,11 +83,16 @@ header::before {
     background: rgb(12, 12, 12);
     
 }
-.contenedor-img {
+
+.image-box{
+    
     height: 360px;
     width: 460px;
-    background: crimson;
+    background: rgba(255, 151, 172, 0.322);
+    margin: 30px;
 }
+
+
 .gallery img{
     height: 300px;
     width: 400px;
@@ -95,8 +100,10 @@ header::before {
 }
 .gallery h1 {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif ;
-    font-weight: 10px;
+    font-family: 'Dosis', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+    
 }
 footer {
     z-index: 2;
