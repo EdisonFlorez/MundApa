@@ -117,8 +117,8 @@ footer {
     bottom: 0;
     width: 100%;
     
-    background: rgb(240, 73, 73);
-    color:rgb(22, 22, 22);
+    background: black;
+    color:white;
     text-align: center;
     
     }
@@ -148,3 +148,9 @@ a:hover{
     color:whitesmoke;
     opacity: 1;
 }
+
+
+#footer p{
+    color:rgb(136, 87, 87);
+}
+
