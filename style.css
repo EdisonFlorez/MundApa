@@ -66,14 +66,19 @@ header::before {
     position: absolute;
     top: 100vh;
     background: black;
+
     
 }
 .container p{
     line-height: 30px;
     font-weight: lighter;
-    padding: 40px;
-    color: gray;
+    color: white;
 }
+#first-part{
+    padding: 40px;
+    
+}
+
     
 
 .gallery {
@@ -81,28 +86,32 @@ header::before {
     height: 100%;
     width: 100%;
     background: rgb(12, 12, 12);
+   
     
 }
 
 .image-box{
     
-    height: 360px;
-    width: 460px;
-    background: rgba(255, 151, 172, 0.322);
+    height: 320px;
+    width: 420px;
+    background: rgba(255, 79, 79, 0.822);
     margin: 30px;
+    
 }
 
 
 .gallery img{
     height: 300px;
     width: 400px;
-    padding: 30px;
+    padding: 10px;
 }
 .gallery h1 {
     text-align: center;
     font-family: 'Dosis', 'Arial Narrow', Arial, sans-serif;
     font-variant: small-caps;
     font-style: italic;
+    position: relative;
+    top: 18px;
     
 }
 footer {
@@ -112,23 +121,59 @@ footer {
     height: 200px;
     bottom:0;
     background: coral;
-    line-height: 30px;
-    font-weight: lighter;
-    padding: 20px;
+    
+    padding: 5px;
     color: white;
+    font-size: 20px;
 }
-
+ .column1{
+     margin: 0px;
+     text-align: left;
+ }
 
 .copyright {
     position: relative;
-    bottom: 0;
+    bottom: 0px;
+    z-index: 3;
     width: 100%;
-    
-    background: black;
+    box-shadow: 0px -20px 0px 6px black;
+    height: 40px;
+    background:black;
     color:white;
     text-align: center;
+    vertical-align: middle;
+    
     
     }
+.footer-content{
+    display: flex;
+    margin: auto;
+}
+.contenedor-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column2{
+    z-index: 3;
+    margin-left: 60px;
+    color: white;
+}
+.column1 h1{
+    font-size: 30px;
+    
+}
+.column1 {
+    font-size: 20px;
+    max-width: 500px;
+}
+.column1 p{
+    font-size: 17px;
+}
+.column2 {
+    font-size: 20px;
+}
 
 nav{
     position: absolute;
@@ -145,19 +190,26 @@ nav ul li{
 
 
 }
-a{
+nav a{
     color: white;
     text-decoration: none;
     
     opacity: 0.6;
 }
-a:hover{
+nav a:hover{
     color:whitesmoke;
     opacity: 1;
 }
+svg{
+    display: inline-block;
+    max-height: 50px;
+    stroke:rgb(255, 255, 255);
+    stroke-width: 1px;
+    fill: none;
+    margin:10px;
 
-
-#footer p{
-    color:rgb(136, 87, 87);
 }
+
+
+
 
