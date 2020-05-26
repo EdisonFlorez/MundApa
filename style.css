@@ -5,7 +5,7 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Dosis', sans-serif, Helvetica, Arial;
+    font-family: 'Oswald', sans-serif, Helvetica, Arial;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    font-family: 'Gotu',sans-serif;
+    font-family: 'Oswald',sans-serif;
     
     box-sizing: border-box;
     min-height: 100vh;
@@ -29,6 +29,7 @@ header {
     transform-style: inherit;
     width: 100vw;
     text-align: center;
+    
     
 }
 
@@ -38,6 +39,19 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+header em{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:110%;
+    right: -17.6%;
+    font-size: 30px;
+    font-weight: bold;
+    color: crimson;
+    text-align: left ;
+    letter-spacing: 3px;
 }
 
 header,
@@ -63,23 +77,45 @@ header::before {
 
 .container {
     z-index: 2;
+    font-family:'Gotu', sans-serif;
     position: absolute;
     top: 100vh;
     background: black;
-
+    
     
 }
-.container p{
-    line-height: 30px;
-    font-weight: lighter;
-    color: white;
-}
-#first-part{
+
+#first-part {
     padding: 40px;
-    
+    font-size: 17px;   
+    font-weight: 1px; 
+    color: white;
+    text-align: justify;
+}
+#first-part p::first-letter{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
 }
 
-    
+#regreso{
+    z-index: 4;
+    display: block;
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(253, 81, 81, 0.849);
+    border:none;
+    border-radius: 50% 50% ;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(48, 47, 47, 0.89);
+}
+#regreso:hover{
+   background:rgba(252, 35, 46, 0.685);
+}
+ 
 
 .gallery {
     
@@ -94,7 +130,7 @@ header::before {
     
     height: 320px;
     width: 420px;
-    background: rgba(255, 79, 79, 0.822);
+    background: rgba(252, 61, 61, 0.822);
     margin: 30px;
     
 }
@@ -107,48 +143,52 @@ header::before {
 }
 .gallery h1 {
     text-align: center;
-    font-family: 'Dosis', 'Arial Narrow', Arial, sans-serif;
-    font-variant: small-caps;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
     position: relative;
-    top: 18px;
-    
+    top: 18px;   
 }
+
+
+
 footer {
     z-index: 2;
-    
-    position: relative;
-    height: 200px;
-    bottom:0;
-    background: coral;
-    
-    padding: 5px;
-    color: white;
-    font-size: 20px;
+    height: 350px;    
+    background: whitesmoke; 
+    font-family: 'Gotu', sans-serif;
+    color: black;
+    padding: 40px;
 }
- .column1{
-     margin: 0px;
-     text-align: left;
- }
-
+footer h1{
+    font-family: 'Oswald',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase ;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top:0px;
+}
+ 
 .copyright {
     position: relative;
-    bottom: 0px;
-    z-index: 3;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
     width: 100%;
-    box-shadow: 0px -20px 0px 6px black;
-    height: 40px;
+    height: 30px;
     background:black;
-    color:white;
+    color:rgb(78, 78, 78);
     text-align: center;
-    vertical-align: middle;
+    padding: 10px;
     
     
     }
 .footer-content{
     display: flex;
-    margin: auto;
+    
 }
+
 .contenedor-img{
     display: flex;
     flex-wrap: wrap;
@@ -156,33 +196,62 @@ footer {
 }
 
 .column2{
-    z-index: 3;
     margin-left: 60px;
-    color: white;
+    margin-top: 10px;
+    color: black;
+
 }
-.column1 h1{
-    font-size: 30px;
+.column2  a{
     
+    text-decoration: none;
+    color: black;
+}
+svg:hover{
+    display: inline-block;
+    max-height: 25px;
+    fill:crimson;
+
+}
+#instagram{
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    height: 40px;
+}
+#facebook{
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    height: 40px;
+}
+.column2 h1{
+    font-size: 30px;
+    margin:0px;
+    font-family: 'crisis';
 }
 .column1 {
-    font-size: 20px;
-    max-width: 500px;
+    max-width: 400px;
+    margin: 10px;
+    color: black;
+}
+.column1 p::first-letter{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
 }
 .column1 p{
     font-size: 17px;
-}
-.column2 {
-    font-size: 20px;
 }
 
 nav{
     position: absolute;
     z-index: 1;
+    
 }
 
 nav ul li{
     float: left;
-    margin: 12px;
+    margin: 20px;
     padding: 0;
     color: white;
     
@@ -193,23 +262,55 @@ nav ul li{
 nav a{
     color: white;
     text-decoration: none;
-    
     opacity: 0.6;
 }
 nav a:hover{
-    color:whitesmoke;
+    color:crimson;
+    letter-spacing: 2px;    
+    font-weight: bold;
     opacity: 1;
 }
 svg{
     display: inline-block;
-    max-height: 50px;
-    stroke:rgb(255, 255, 255);
-    stroke-width: 1px;
-    fill: none;
-    margin:10px;
-
+    max-height: 20px;
+      
+    fill: rgba(17, 17, 17, 0.911);
 }
 
 
+body::-webkit-scrollbar {
+    width: 3px;     /* Tamaño del scroll en vertical */
+    height: 3px;    /* Tamaño del scroll en horizontal */
+      /* Ocultar scroll
+     */
+    
+    background: rgba(17, 17, 17, 0.911);
+    
+}
 
+body::-webkit-scrollbar-thumb {
+    background:  rgba(253, 81, 81, 0.849);
+    border-radius: 4px;
+    
+}
 
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background:rgba(252, 35, 46, 0.685);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color:rgba (255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(24, 24, 24);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: rgb(24, 24, 24);;
+}
